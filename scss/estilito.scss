@@ -1,0 +1,193 @@
+// General //
+html{
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+h2{
+    font-style: italic;
+    font-weight: bold;
+}
+h5 {
+    font-weight: bold;
+    color: black;
+}
+.p1 {
+    font-weight: bold;
+    color: black;
+}
+
+// NavBar //
+/******************NAVBAR******************/
+header {
+  background: #282d32;
+  background: linear-gradient(267deg, #282d32 0%, #282d32 100%); }
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 5px; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; }
+    header a:hover {
+      color: #353535; }
+
+// Productos //
+/******************PRODUCTOS******************/
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: auto;
+    padding-inline: 2rem;
+    justify-content: space-evenly;
+    margin: auto;
+    grid-gap: 2rem;
+    padding-top: 25px;
+  }
+  .container-productos .img-container {
+    flex: 0 1 320px;
+    border: 2px solid black;
+  }
+  .container-productos .img-container:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
+  .container-productos .img-container .img-productos {
+    width: 100%;
+  }
+  .tituloDep {
+    text-align: center;
+    font-size: 2rem;
+  }
+// Novedades //
+/******************NOVEDADES******************/
+.banner-novedades {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .grid-novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: auto;
+    padding-inline: 2rem;
+    justify-content: space-evenly;
+    margin: auto;
+    grid-gap: 2rem;
+    padding-top: 25px;
+  }
+  .grid-novedades .img-novedades {
+    width: 100%;
+    border: solid black 2px;
+  }
+  .grid-novedades .textonovedades {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    background: linear-gradient(0deg, rgb(143, 132, 214), rgb(143, 132, 214)) no-repeat right bottom/0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    color: black;
+    text-decoration: none;
+  }
+  .grid-novedades .textonovedades :visited {
+    color: black;
+  }
+  .grid-novedades .textonovedades:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    color: white;
+    text-decoration: none;
+  }
+  .novedades2 {
+    margin: 2rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .novedadesP {
+    font-weight: bolder;
+  }
+  .h3Noved {
+    margin: 2rem;
+  }
+  .listCond {
+    margin: 2rem;
+  }
+
+// Faq //
+/******************FAQ******************/
+.contenedorFaq {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .contenedorFaq .titulofaq {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+  }
+  .contenedorFaq .h2faq {
+    font-size: 24px;
+    background-color: beige;
+    padding: 0.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .contenedorFaq .info {
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
+    margin: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+// Footer //
+/******************FOOTER******************/
+.footer-dark {
+    margin-top: 50px;
+    padding: 35px 0;
+    color: #f0f9ff;
+    background-color: #282d32; }
+  
+  .footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 60%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75; }
+  
+  .footer-dark .item.social > a:hover {
+    opacity: 0.9; }
+  
+  .footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0; }
+  
+  .footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0; }
+  
+  .footer-dark .item.social {
+    text-align: center; }
